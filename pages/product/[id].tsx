@@ -6,9 +6,9 @@ const ProductItem = () => {
     query: { id },
   } = useRouter();
   return (
-    <div>
+    <section>
       <h1>PAGINA DE PRDUCTO : {id}</h1>
-    </div>
+    </section>
   );
 };
 
