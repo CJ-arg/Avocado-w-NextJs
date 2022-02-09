@@ -16,7 +16,13 @@ const Home = () => {
   return (
     <div>
       {console.log(productList, 'return')}
-      {productList && productList.map((product) => <p>{product.name}</p>)}
+      {productList &&
+        productList.map((product) => (
+          <div>
+            <p>{product.name}</p>
+            <p>{product.botanicos}</p> <img src={product.image} />
+          </div>
+        ))}
     </div>
   )
 }

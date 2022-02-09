@@ -7,7 +7,17 @@ const Layout: React.FC = ({ children }) => {
     <div>
       <Navbar />
       {children}
-      <Footer />
+      <div className="container">
+        <Footer />
+      </div>
+      <style jsx>
+        {' '}
+        {`
+          .container {
+            background-color: rgb(165, 135, 0);
+          }
+        `}
+      </style>
     </div>
   )
 }

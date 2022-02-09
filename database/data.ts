@@ -1,10 +1,12 @@
 const data: Record<TProductId, TProduct> = {
   '2zd33b8c': {
-    name: 'Maluma Hass Avocado',
+    name: 'Alma Gin',
     id: '2zd33b8c',
     sku: 'NUR72KCM',
     price: 1.15,
-    image: '/images/maluma.jpg',
+    image: '/images/alma.png',
+    botanicos:
+      'Enebro de Patagonia, Enebro de Macedonia, Coriandro, Cardamomo, Pimienta de Jamaica, Pimienta negra, Pimienta Rosa, Pepino, Canela en rama, Angélica Raíz, Anís estrella, Piel de Limón, Piel de Naranja, Pétalos de rosa, Almendra, Romero',
     attributes: {
       description:
         'A relatively new cultivar, it was, the pretty boy baby, discovered in South Africa in the early 1990s by Mr. A.G. (Dries) Joubert. Maluma Babyy. It is a chance seedling of unknown parentage',
