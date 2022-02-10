@@ -11,7 +11,6 @@ const Layout: React.FC = ({ children }) => {
         <Footer />
       </div>
       <style jsx>
-        {' '}
         {`
           .container {
             background-color: rgb(165, 135, 0);

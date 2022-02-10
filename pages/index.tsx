@@ -18,9 +18,9 @@ const Home = () => {
       {console.log(productList, 'return')}
       {productList &&
         productList.map((product) => (
-          <div>
+          <div className="w-64 h-64 ">
             <p>{product.name}</p>
-            <p>{product.botanicos}</p> <img src={product.image} />
+            <p>{product.productor}</p> <img src={product.image} />
           </div>
         ))}
     </div>

@@ -19,11 +19,10 @@ type TProductAttributes = {
 type TProduct = {
   id: TProductId
   name: string
-  sku: string
-  price: number
+  productor: string
+  origen: string
   image: Url
-  attributes: TProductAttributes
-  botanicos: string
+  web: Url
 }
 
 type TAPIAVODetailResponse = TProduct
