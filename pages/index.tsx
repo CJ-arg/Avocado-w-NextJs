@@ -9,21 +9,24 @@ const Home = () => {
       .then((response) => response.json())
       .then(({ data, length }) => {
         setProductList(data)
-        console.log(productList, data)
       })
   }, [])
 
   return (
-    <div>
-      {console.log(productList, 'return')}
-      {productList &&
-        productList.map((product) => (
-          <div className="w-64 h-64 ">
-            <p>{product.name}</p>
-            <p>{product.productor}</p> <img src={product.image} />
-          </div>
-        ))}
-    </div>
+    <>
+      <div id="tab_bar"></div>
+      <div className="grid grid-rows-2 grid-flow-col gap-2">
+        {console.log(productList, 'return')}
+        {productList &&
+          productList.map((product) => (
+            <div className="w-56">
+              <img className=" rounded-sm" src={product.image} />
+              <p>{product.name}</p>
+              <p>{product.productor}</p>
+            </div>
+          ))}
+      </div>
+    </>
   )
 }
 
