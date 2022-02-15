@@ -10,7 +10,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "tw:build": "tailwind -i ./styles/globals.css -o ./public/css/tailwind.css --watch"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",

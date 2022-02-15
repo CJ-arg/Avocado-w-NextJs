@@ -14,15 +14,24 @@ const Home = () => {
 
   return (
     <>
-      <div id="tab_bar"></div>
-      <div className="grid grid-rows-2 grid-flow-col gap-2">
+      <div className="grid grid-rows-2 grid-flow-col gap-2 ">
         {console.log(productList, 'return')}
         {productList &&
           productList.map((product) => (
-            <div className="w-56">
-              <img className=" rounded-sm" src={product.image} />
-              <p>{product.name}</p>
-              <p>{product.productor}</p>
+            <div className="Card">
+              <div className="w-full gap-2">
+                <div className="w-full h-3/5 rounded-t-lg ">
+                  <img className=" " src={product.image} />
+                </div>
+              </div>
+              <div className="p-1 w-full  bg-yellow-700 rounded-b-lg">
+                <p className="text-black text-center font-extrabold">
+                  {product.name}
+                </p>
+                <p className="text-black px-2 font-light">
+                  {product.productor}
+                </p>
+              </div>
             </div>
           ))}
       </div>
