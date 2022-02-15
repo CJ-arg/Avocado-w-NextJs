@@ -4,5 +4,5 @@
 @tailwind utilities;
 
 .Card {
-  @apply w-56 h-60  rounded-lg shadow-md gap-x-3;
+  @apply w-52 h-56  rounded-lg shadow-md gap-x-3;
 }

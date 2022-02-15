@@ -18,7 +18,7 @@ const Home = () => {
         {console.log(productList, 'return')}
         {productList &&
           productList.map((product) => (
-            <div className="Card">
+            <div className="Card ">
               <div className="w-full gap-2">
                 <div className="w-full h-3/5 rounded-t-lg ">
                   <img className=" " src={product.image} />
